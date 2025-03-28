@@ -23,17 +23,17 @@ funksjonen)
 
 // Skriv koden for oppgave 1 her
 
-let number = 3;
 
-function checkNumber() {
-    if (number % 2 === 0) {
+
+function checkNr(nr) {
+    if (nr % 2 === 0) {
         return "Even";
     } else {
         return "Odd";
     }
 }
 
-console.log(checkNumber(number))
+console.log(checkNr(4))
 /******************************************************************************
 2.
 
@@ -119,13 +119,13 @@ Eksempel 2: ["En", "To", "Tre", "Fire", "Fem", "Seks"] skal returnere
 
 // Skriv koden for oppgave 4 her
 
-const myArray = ["Rød", "Grønn", "Blå", "Gul"]
+// const myArray = ["Rød", "Grønn", "Blå", "Gul"]
 
-function myFunction() {
+function myFunction(myArray) {
     return myArray.slice(1, -1);
 }
 
-console.log(myFunction()); 
+console.log(myFunction(["Rød", "Grønn", "Blå", "Gul"])); 
 /******************************************************************************
 5.
 
@@ -183,9 +183,9 @@ items.shift()
 
 console.log(items)
 
-let viskelær = items.indexOf("Viskelær");
-if (viskelær !== -1) {
-    items[viskelær] = "Linjal"
+let replaceViskelær = items.indexOf("Viskelær");
+if (replaceViskelær !== -1) {
+    items[replaceViskelær] = "Linjal"
 }
 
 console.log(items)
